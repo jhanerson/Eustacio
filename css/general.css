@@ -1,0 +1,59 @@
+body {
+
+    background-color: black;
+    color: white;
+text-align: center;
+}
+
+.card1 {
+
+
+text-align: center;
+
+}
+
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card1 {
+    /* Estilo adicional para la clase card1 si es necesario */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* Estilos para la sección principal */
+.card1 {
+    background-color: #0f0f0f;
+    padding: 20px;
+}
+
+/* Estilos para el botón dentro de la sección principal */
+.card1 .button {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para las etiquetas y entradas de texto */
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+

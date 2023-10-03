@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi?key=TU_CLAVE_DE_API"></script>
+    <link rel="stylesheet" href="css/general.css">
+    <title>Eustacio</title>
+</head>
+
+<body class="no-scroll">
+
+    <div class="centrado" id="onload">
+        <div class="lds-ripple">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Generador de Palabras</title>
+    </head>
+
+    <body>
+        <section class="text-center card1">
+            <main>
+                <section class="card1 button">
+                    Palabras
+                    <button type="button" id="palabras" onclick="generarPalabra()">Haz clic</button>
+                </section>
+            </main>
+            <br>
+            <section>
+                <div>
+                    <label for="A-1" class="form-label">palabra 1</label>
+                    <input type="text" class="form-control" id="A-1">
+                </div>
+            </section>
+            <br>
+            <section>
+                <div>
+                    <label for="B-1" class="form-label">palabra 2</label>
+                    <input type="text" class="form-control" id="B-1">
+                </div>
+            </section>
+            <br>
+            <section>
+                <div>
+                    <label for="C-1" class="form-label">palabra 3</label>
+                    <input type="text" class="form-control" id="C-1">
+                </div>
+            </section>
+            <br>
+            <footer>
+                <br>
+            </footer>
+
+            <script>
+                function generarPalabra() {
+                    // Lista de palabras en español
+                    var palabras = ["Hello", "world", "time", "day", "night", "life", "love", "people", "work", "play", "home", "family", "friend", "place", "way", "good", "bad", "happy", "sad", "new", "old", "big", "small", "high", "low", "great", "small", "best", "better", "worst", "high", "low", "first", "last", "next", "now", "always", "never", "here", "there", "where", "when", "how", "why", "what", "who", "which", "all", "some", "none", "many", "few", "more", "less", "give", "take", "buy", "sell", "eat", "drink", "sleep", "wake", "see", "hear", "say", "ask", "answer", "do", "make", "create", "destroy", "build", "break", "begin", "end", "start", "stop", "go", "come", "stay", "leave", "find", "lose", "win", "lose", "happy", "sad", "angry", "calm", "fast", "slow", "high", "low", "hot", "cold", "bright", "dark", "strong", "weak", "hard", "soft", "deep", "shallow", "thick", "thin", "wide", "narrow", "far", "near", "empty", "full", "clean", "dirty", "healthy", "sick", "rich", "poor", "safe", "dangerous", "true", "false", "right", "wrong", "good", "bad", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright", "dark", "rich", "poor", "safe", "dangerous", "heavy", "light", "hot", "cold", "empty", "full", "clean", "dirty", "healthy", "sick", "alive", "dead", "beautiful", "ugly", "happy", "sad", "smart", "dumb", "old", "young", "big", "small", "short", "tall", "thick", "thin", "long", "short", "fast", "slow", "loud", "quiet", "hard", "soft", "deep", "shallow", "bright",];
+
+                    // Generar índices aleatorios para cada campo
+                    var indiceA = Math.floor(Math.random() * palabras.length);
+                    var indiceB = Math.floor(Math.random() * palabras.length);
+                    var indiceC = Math.floor(Math.random() * palabras.length);
+
+                    // Asignar palabras a los campos de entrada
+                    document.getElementById("A-1").value = palabras[indiceA];
+                    document.getElementById("B-1").value = palabras[indiceB];
+                    document.getElementById("C-1").value = palabras[indiceC];
+                }
+            </script>
+
+            <body>
+
+                <!-- Agrega un contenedor para el selector de idioma -->
+                <div id="google_translate_element"></div>
+
+                <h1>Bienvenido a Mi Sitio Web</h1>
+                <p>Este es un ejemplo de cómo integrar el Traductor de Google en tu sitio web.</p>
+
+                <!-- Agrega el script para configurar el selector de idioma -->
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({ pageLanguage: 'es', includedLanguages: 'en,fr,de,ja,ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+                    }
+                </script>
+                <script type="text/javascript"
+                    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+            </body>
+
+            </html>
+
+        </section>
+    </body>
+
+    </html>
+
+    <br>
+    <footer>
+        <ul>
+            <h6>© Eustacio 2023 </h6>
+        </ul>
+    </footer>
+
+    <script src="js/code.js"></script>
+    <script src="js/general.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
